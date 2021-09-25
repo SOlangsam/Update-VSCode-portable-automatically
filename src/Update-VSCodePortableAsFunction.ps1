@@ -27,6 +27,6 @@ function Update-VSCodePortable {
     Unblock-File -Path $vscodeZipFile
     ## Stop VSCode if running
     Stop-Process -Name Code -Force -ErrorAction $ErrorActionPreference
-    ## Extract and overwrte zip files to VSCodePortable path
+    ## Extract and overwrite VSCodePortable files
     Expand-Archive -Path $vscodeZipFile -DestinationPath $pathToVSCodePortable -Force 
 }
