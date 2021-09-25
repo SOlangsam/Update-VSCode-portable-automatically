@@ -12,6 +12,6 @@ Unblock-File -Path $zipFile
 ## Stop VSCode if running
 Stop-Process -Name Code -Force -ErrorAction Continue
 
-## Extract and overwrite VSCodePortable files
+## Extract and overwrte zip files to VSCodePortable path
 Expand-Archive -Path $zipFile -DestinationPath $pathToVSCodePortable -Force 
 
